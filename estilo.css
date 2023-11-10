@@ -1,0 +1,139 @@
+body
+{
+    margin: 0px;
+    background-color: gray;
+}
+
+.linha_verde
+{
+    background-color: rgb(49, 117, 75);
+    height: 10px;
+}
+
+#container_cabecario
+{
+    padding: 10px 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.cabecario_esquerda img
+{
+    width: 64px;
+    height: 64px;
+}
+
+.cabecario_direita
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecario_pesquisar
+{
+    border: 1px solid gray;
+    padding: 0px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+}
+
+
+form input, form button
+{
+    border: none;
+    padding: 0px;
+    font-size: 16px;
+    align-items: start;
+}
+
+form input
+{
+    outline: 0;
+}
+
+button
+{
+    background-color: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button img
+{
+    width: 16px;
+    height: 16px;
+}
+
+.cabecario_menu
+{
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.cabecario_menu img
+{
+    width: 27px;
+    height: 27px;
+}
+
+                    /*___RESPONSIVIDADE___*/
+
+    /*Tablet*/
+@media (max-width: 1000px)      
+{
+
+    #container_cabecario
+    {
+        padding: 10px 50px;
+    }
+
+    .cabecario_menu img
+    {
+        width: 24px;
+        height: 25px;
+    }
+
+}
+
+    /*Celular*/
+@media (max-width: 700px)       
+{
+    #container_cabecario
+    {
+        padding: 10px 25px;
+    }
+
+    .cabecario_pesquisar
+    {
+        border: 1px solid gray;
+        padding: 10px 8px;
+    }
+
+    input
+    {
+        max-width: 160px;
+    }
+
+    .cabecario_menu
+    {
+        margin-left: 20px;
+    }
+}
+
+    /*_Ajustes que foram necessarios na barra de pesquisa_*/
+@media (max-width: 370px)  
+{
+    input
+    {
+        max-width: 100px;
+    }
+    
+}
